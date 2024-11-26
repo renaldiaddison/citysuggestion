@@ -1,0 +1,523 @@
+{
+	"info": {
+		"_postman_id": "709c7062-2a9f-4e1d-9076-70aa4a2b9f76",
+		"name": "City Suggestion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28766609"
+	},
+	"item": [
+		{
+			"name": "City",
+			"item": [
+				{
+					"name": "Add City",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 123,\r\n    \"name\": \"Sample City\",\r\n    \"asciiName\": \"Sample City\",\r\n    \"alternateNames\": \"Example City, City Example\",\r\n    \"latitude\": 37.7749,\r\n    \"longitude\": -122.4194,\r\n    \"featureClass\": \"P\",\r\n    \"featureCode\": \"PPL\",\r\n    \"country\": \"US\",\r\n    \"cc2\": \"CA\",\r\n    \"admin1\": \"California\",\r\n    \"admin2\": \"San Francisco\",\r\n    \"admin3\": \"\",\r\n    \"admin4\": \"\",\r\n    \"population\": 884363,\r\n    \"elevation\": 0,\r\n    \"dem\": 20,\r\n    \"timezone\": \"America/Los_Angeles\",\r\n    \"modifiedAt\": \"2022-10-20\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cities",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cities"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 134,\r\n    \"name\": \"Sample City\",\r\n    \"asciiName\": \"Sample City\",\r\n    \"alternateNames\": \"Example City, City Example\",\r\n    \"latitude\": 37.7749,\r\n    \"longitude\": -122.4194,\r\n    \"featureClass\": \"P\",\r\n    \"featureCode\": \"PPL\",\r\n    \"country\": \"US\",\r\n    \"cc2\": \"CA\",\r\n    \"admin1\": \"California\",\r\n    \"admin2\": \"San Francisco\",\r\n    \"admin3\": \"\",\r\n    \"admin4\": \"\",\r\n    \"population\": 884363,\r\n    \"elevation\": 15,\r\n    \"dem\": 20,\r\n    \"timezone\": \"America/Los_Angeles\",\r\n    \"modifiedAt\": \"2022-10-20\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/cities",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cities"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:46:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 134,\n        \"name\": \"Sample City\",\n        \"asciiName\": \"Sample City\",\n        \"alternateNames\": \"Example City, City Example\",\n        \"latitude\": 37.7749,\n        \"longitude\": -122.4194,\n        \"featureClass\": \"P\",\n        \"featureCode\": \"PPL\",\n        \"country\": \"US\",\n        \"cc2\": \"CA\",\n        \"admin1\": \"California\",\n        \"admin2\": \"San Francisco\",\n        \"admin3\": \"\",\n        \"admin4\": \"\",\n        \"population\": 884363,\n        \"elevation\": 15,\n        \"dem\": 20,\n        \"timezone\": \"America/Los_Angeles\",\n        \"modifiedAt\": \"2022-10-20\"\n    },\n    \"errors\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Remigrate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/cities/remigrate",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cities",
+								"remigrate"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 134,\r\n    \"name\": \"Sample City\",\r\n    \"asciiName\": \"Sample City\",\r\n    \"alternateNames\": \"Example City, City Example\",\r\n    \"latitude\": 37.7749,\r\n    \"longitude\": -122.4194,\r\n    \"featureClass\": \"P\",\r\n    \"featureCode\": \"PPL\",\r\n    \"country\": \"US\",\r\n    \"cc2\": \"CA\",\r\n    \"admin1\": \"California\",\r\n    \"admin2\": \"San Francisco\",\r\n    \"admin3\": \"\",\r\n    \"admin4\": \"\",\r\n    \"population\": 884363,\r\n    \"elevation\": 15,\r\n    \"dem\": 20,\r\n    \"timezone\": \"America/Los_Angeles\",\r\n    \"modifiedAt\": \"2022-10-20\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/cities",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cities"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:46:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 134,\n        \"name\": \"Sample City\",\n        \"asciiName\": \"Sample City\",\n        \"alternateNames\": \"Example City, City Example\",\n        \"latitude\": 37.7749,\n        \"longitude\": -122.4194,\n        \"featureClass\": \"P\",\n        \"featureCode\": \"PPL\",\n        \"country\": \"US\",\n        \"cc2\": \"CA\",\n        \"admin1\": \"California\",\n        \"admin2\": \"San Francisco\",\n        \"admin3\": \"\",\n        \"admin4\": \"\",\n        \"population\": 884363,\n        \"elevation\": 15,\n        \"dem\": 20,\n        \"timezone\": \"America/Los_Angeles\",\n        \"modifiedAt\": \"2022-10-20\"\n    },\n    \"errors\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Update City By ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sample City 2\",\r\n    \"asciiName\": \"Sample City\",\r\n    \"alternateNames\": \"Example City, City Example\",\r\n    \"latitude\": 37.7749,\r\n    \"longitude\": -122.4194,\r\n    \"featureClass\": \"P\",\r\n    \"featureCode\": \"PPL\",\r\n    \"country\": \"US\",\r\n    \"cc2\": \"CA\",\r\n    \"admin1\": \"California\",\r\n    \"admin2\": \"San Francisco\",\r\n    \"admin3\": \"\",\r\n    \"admin4\": \"\",\r\n    \"population\": 884363,\r\n    \"elevation\": 15,\r\n    \"dem\": 20,\r\n    \"timezone\": \"America/Los_Angeles\",\r\n    \"modifiedAt\": \"2022-10-20\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cities/134",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cities",
+								"134"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Sample City 2\",\r\n    \"asciiName\": \"Sample City\",\r\n    \"alternateNames\": \"Example City, City Example\",\r\n    \"latitude\": 37.7749,\r\n    \"longitude\": -122.4194,\r\n    \"featureClass\": \"P\",\r\n    \"featureCode\": \"PPL\",\r\n    \"country\": \"US\",\r\n    \"cc2\": \"CA\",\r\n    \"admin1\": \"California\",\r\n    \"admin2\": \"San Francisco\",\r\n    \"admin3\": \"\",\r\n    \"admin4\": \"\",\r\n    \"population\": 884363,\r\n    \"elevation\": 15,\r\n    \"dem\": 20,\r\n    \"timezone\": \"America/Los_Angeles\",\r\n    \"modifiedAt\": \"2022-10-20\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/cities/134",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cities",
+										"134"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:50:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 134,\n        \"name\": \"Sample City 2\",\n        \"asciiName\": \"Sample City\",\n        \"alternateNames\": \"Example City, City Example\",\n        \"latitude\": 37.7749,\n        \"longitude\": -122.4194,\n        \"featureClass\": \"P\",\n        \"featureCode\": \"PPL\",\n        \"country\": \"US\",\n        \"cc2\": \"CA\",\n        \"admin1\": \"California\",\n        \"admin2\": \"San Francisco\",\n        \"admin3\": \"\",\n        \"admin4\": \"\",\n        \"population\": 884363,\n        \"elevation\": 15,\n        \"dem\": 20,\n        \"timezone\": \"America/Los_Angeles\",\n        \"modifiedAt\": \"2022-10-20\"\n    },\n    \"errors\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete City By ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/cities/134",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cities",
+								"134"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/cities/134",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cities",
+										"134"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:51:41 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": \"OK\",\n    \"errors\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Find City By ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/cities/123",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cities",
+								"123"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/cities/123",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cities",
+										"123"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:52:53 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 123,\n        \"name\": \"Sample City\",\n        \"asciiName\": \"Sample City\",\n        \"alternateNames\": \"Example City, City Example\",\n        \"latitude\": 37.7749,\n        \"longitude\": -122.4194,\n        \"featureClass\": \"P\",\n        \"featureCode\": \"PPL\",\n        \"country\": \"US\",\n        \"cc2\": \"CA\",\n        \"admin1\": \"California\",\n        \"admin2\": \"San Francisco\",\n        \"admin3\": \"\",\n        \"admin4\": \"\",\n        \"population\": 884363,\n        \"elevation\": 15,\n        \"dem\": 20,\n        \"timezone\": \"America/Los_Angeles\",\n        \"modifiedAt\": \"2024-11-26\"\n    },\n    \"errors\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Suggest City",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/cities/suggest?q=Londontowne&latitude=42.98339&longitude=-79.4163",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cities",
+								"suggest"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Londontowne"
+								},
+								{
+									"key": "latitude",
+									"value": "42.98339"
+								},
+								{
+									"key": "longitude",
+									"value": "-79.4163"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/cities/suggest?q=Sample City&latitude=42.98339&longitude=-79.4163",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cities",
+										"suggest"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "Sample City"
+										},
+										{
+											"key": "latitude",
+											"value": "42.98339"
+										},
+										{
+											"key": "longitude",
+											"value": "-79.4163"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:47:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 4755158,\n            \"name\": \"Dale City, VA, US\",\n            \"latitude\": 38.63706,\n            \"longitude\": -77.31109,\n            \"score\": 0.71\n        },\n        {\n            \"id\": 4993659,\n            \"name\": \"Garden City, MI, US\",\n            \"latitude\": 42.32559,\n            \"longitude\": -83.33104,\n            \"score\": 0.69\n        },\n        {\n            \"id\": 5192184,\n            \"name\": \"Grove City, PA, US\",\n            \"latitude\": 41.15784,\n            \"longitude\": -80.08867,\n            \"score\": 0.69\n        },\n        {\n            \"id\": 4838204,\n            \"name\": \"Mansfield City, CT, US\",\n            \"latitude\": 41.76593,\n            \"longitude\": -72.23369,\n            \"score\": 0.67\n        },\n        {\n            \"id\": 4985180,\n            \"name\": \"Bay City, MI, US\",\n            \"latitude\": 43.59447,\n            \"longitude\": -83.88886,\n            \"score\": 0.67\n        },\n        {\n            \"id\": 5188609,\n            \"name\": \"Ellwood City, PA, US\",\n            \"latitude\": 40.86173,\n            \"longitude\": -80.28645,\n            \"score\": 0.67\n        },\n        {\n            \"id\": 5204278,\n            \"name\": \"Oil City, PA, US\",\n            \"latitude\": 41.43395,\n            \"longitude\": -79.70644,\n            \"score\": 0.67\n        },\n        {\n            \"id\": 5118226,\n            \"name\": \"Garden City, NY, US\",\n            \"latitude\": 40.72677,\n            \"longitude\": -73.6343,\n            \"score\": 0.66\n        },\n        {\n            \"id\": 5122794,\n            \"name\": \"Johnson City, NY, US\",\n            \"latitude\": 42.11563,\n            \"longitude\": -75.95881,\n            \"score\": 0.66\n        },\n        {\n            \"id\": 4473137,\n            \"name\": \"James City, NC, US\",\n            \"latitude\": 35.08877,\n            \"longitude\": -77.03495,\n            \"score\": 0.65\n        },\n        {\n            \"id\": 5128481,\n            \"name\": \"New City, NY, US\",\n            \"latitude\": 41.1476,\n            \"longitude\": -73.98931,\n            \"score\": 0.65\n        },\n        {\n            \"id\": 4513409,\n            \"name\": \"Grove City, OH, US\",\n            \"latitude\": 39.88145,\n            \"longitude\": -83.09296,\n            \"score\": 0.64\n        },\n        {\n            \"id\": 4920637,\n            \"name\": \"Gas City, IN, US\",\n            \"latitude\": 40.48726,\n            \"longitude\": -85.61303,\n            \"score\": 0.64\n        },\n        {\n            \"id\": 123,\n            \"name\": \"Sample City, California, US\",\n            \"latitude\": 37.7749,\n            \"longitude\": -122.4194,\n            \"score\": 0.63\n        },\n        {\n            \"id\": 134,\n            \"name\": \"Sample City, California, US\",\n            \"latitude\": 37.7749,\n            \"longitude\": -122.4194,\n            \"score\": 0.63\n        },\n        {\n            \"id\": 4584322,\n            \"name\": \"Lake City, SC, US\",\n            \"latitude\": 33.871,\n            \"longitude\": -79.75535,\n            \"score\": 0.63\n        },\n        {\n            \"id\": 4851163,\n            \"name\": \"Charles City, IA, US\",\n            \"latitude\": 43.06636,\n            \"longitude\": -92.67241,\n            \"score\": 0.63\n        },\n        {\n            \"id\": 5033727,\n            \"name\": \"Lake City, MN, US\",\n            \"latitude\": 44.44941,\n            \"longitude\": -92.26684,\n            \"score\": 0.63\n        },\n        {\n            \"id\": 4082589,\n            \"name\": \"Pell City, AL, US\",\n            \"latitude\": 33.58621,\n            \"longitude\": -86.28609,\n            \"score\": 0.62\n        },\n        {\n            \"id\": 4829843,\n            \"name\": \"Alexander City, AL, US\",\n            \"latitude\": 32.94401,\n            \"longitude\": -85.95385,\n            \"score\": 0.62\n        },\n        {\n            \"id\": 4866445,\n            \"name\": \"Mason City, IA, US\",\n            \"latitude\": 43.15357,\n            \"longitude\": -93.20104,\n            \"score\": 0.62\n        },\n        {\n            \"id\": 4886255,\n            \"name\": \"Calumet City, IL, US\",\n            \"latitude\": 41.61559,\n            \"longitude\": -87.52949,\n            \"score\": 0.62\n        },\n        {\n            \"id\": 4905334,\n            \"name\": \"Park City, IL, US\",\n            \"latitude\": 42.34836,\n            \"longitude\": -87.88424,\n            \"score\": 0.62\n        },\n        {\n            \"id\": 4161187,\n            \"name\": \"Lake City, FL, US\",\n            \"latitude\": 30.18968,\n            \"longitude\": -82.63929,\n            \"score\": 0.61\n        },\n        {\n            \"id\": 4265717,\n            \"name\": \"Tell City, IN, US\",\n            \"latitude\": 37.95144,\n            \"longitude\": -86.76777,\n            \"score\": 0.61\n        },\n        {\n            \"id\": 4364312,\n            \"name\": \"Ocean City, MD, US\",\n            \"latitude\": 38.3365,\n            \"longitude\": -75.08491,\n            \"score\": 0.61\n        },\n        {\n            \"id\": 4455080,\n            \"name\": \"Bessemer City, NC, US\",\n            \"latitude\": 35.28486,\n            \"longitude\": -81.28397,\n            \"score\": 0.61\n        },\n        {\n            \"id\": 4503351,\n            \"name\": \"Ocean City, NJ, US\",\n            \"latitude\": 39.27762,\n            \"longitude\": -74.5746,\n            \"score\": 0.61\n        },\n        {\n            \"id\": 4579503,\n            \"name\": \"Garden City, SC, US\",\n            \"latitude\": 33.59295,\n            \"longitude\": -79.00865,\n            \"score\": 0.61\n        },\n        {\n            \"id\": 5012495,\n            \"name\": \"Traverse City, MI, US\",\n            \"latitude\": 44.76306,\n            \"longitude\": -85.62063,\n            \"score\": 0.61\n        },\n        {\n            \"id\": 4167536,\n            \"name\": \"Palm City, FL, US\",\n            \"latitude\": 27.16783,\n            \"longitude\": -80.26616,\n            \"score\": 0.6\n        },\n        {\n            \"id\": 4196688,\n            \"name\": \"Garden City, GA, US\",\n            \"latitude\": 32.11437,\n            \"longitude\": -81.154,\n            \"score\": 0.6\n        },\n        {\n            \"id\": 4480153,\n            \"name\": \"Morehead City, NC, US\",\n            \"latitude\": 34.72294,\n            \"longitude\": -76.72604,\n            \"score\": 0.6\n        },\n        {\n            \"id\": 4491651,\n            \"name\": \"Siler City, NC, US\",\n            \"latitude\": 35.72347,\n            \"longitude\": -79.46224,\n            \"score\": 0.6\n        },\n        {\n            \"id\": 4501943,\n            \"name\": \"Gloucester City, NJ, US\",\n            \"latitude\": 39.89178,\n            \"longitude\": -75.11629,\n            \"score\": 0.6\n        },\n        {\n            \"id\": 4633419,\n            \"name\": \"Johnson City, TN, US\",\n            \"latitude\": 36.31344,\n            \"longitude\": -82.35347,\n            \"score\": 0.6\n        },\n        {\n            \"id\": 4870083,\n            \"name\": \"Orange City, IA, US\",\n            \"latitude\": 43.00721,\n            \"longitude\": -96.05835,\n            \"score\": 0.6\n        },\n        {\n            \"id\": 4919203,\n            \"name\": \"Columbia City, IN, US\",\n            \"latitude\": 41.15727,\n            \"longitude\": -85.48831,\n            \"score\": 0.6\n        },\n        {\n            \"id\": 4152695,\n            \"name\": \"Dade City, FL, US\",\n            \"latitude\": 28.36472,\n            \"longitude\": -82.19592,\n            \"score\": 0.59\n        },\n        {\n            \"id\": 4527963,\n            \"name\": \"West Carrollton City, OH, US\",\n            \"latitude\": 39.67228,\n            \"longitude\": -84.25216,\n            \"score\": 0.59\n        },\n        {\n            \"id\": 4632959,\n            \"name\": \"Jefferson City, TN, US\",\n            \"latitude\": 36.12231,\n            \"longitude\": -83.4924,\n            \"score\": 0.59\n        },\n        {\n            \"id\": 4862034,\n            \"name\": \"Iowa City, IA, US\",\n            \"latitude\": 41.66113,\n            \"longitude\": -91.53017,\n            \"score\": 0.59\n        },\n        {\n            \"id\": 5073661,\n            \"name\": \"Nebraska City, NE, US\",\n            \"latitude\": 40.67667,\n            \"longitude\": -95.85917,\n            \"score\": 0.59\n        },\n        {\n            \"id\": 5115854,\n            \"name\": \"East Garden City, NY, US\",\n            \"latitude\": 40.73083,\n            \"longitude\": -73.59806,\n            \"score\": 0.59\n        },\n        {\n            \"id\": 5125125,\n            \"name\": \"Long Island City, NY, US\",\n            \"latitude\": 40.74482,\n            \"longitude\": -73.94875,\n            \"score\": 0.59\n        },\n        {\n            \"id\": 4167055,\n            \"name\": \"Orange City, FL, US\",\n            \"latitude\": 28.94888,\n            \"longitude\": -81.29867,\n            \"score\": 0.58\n        },\n        {\n            \"id\": 4167694,\n            \"name\": \"Panama City, FL, US\",\n            \"latitude\": 30.15946,\n            \"longitude\": -85.65983,\n            \"score\": 0.58\n        },\n        {\n            \"id\": 4354265,\n            \"name\": \"Ellicott City, MD, US\",\n            \"latitude\": 39.26733,\n            \"longitude\": -76.79831,\n            \"score\": 0.58\n        },\n        {\n            \"id\": 4361831,\n            \"name\": \"Maryland City, MD, US\",\n            \"latitude\": 39.09205,\n            \"longitude\": -76.81775,\n            \"score\": 0.58\n        },\n        {\n            \"id\": 4502904,\n            \"name\": \"Margate City, NJ, US\",\n            \"latitude\": 39.32789,\n            \"longitude\": -74.50349,\n            \"score\": 0.58\n        },\n        {\n            \"id\": 4636285,\n            \"name\": \"Lenoir City, TN, US\",\n            \"latitude\": 35.7973,\n            \"longitude\": -84.25603,\n            \"score\": 0.58\n        },\n        {\n            \"id\": 4736134,\n            \"name\": \"Texas City, TX, US\",\n            \"latitude\": 29.38384,\n            \"longitude\": -94.9027,\n            \"score\": 0.58\n        },\n        {\n            \"id\": 4888270,\n            \"name\": \"Coal City, IL, US\",\n            \"latitude\": 41.28781,\n            \"longitude\": -88.28562,\n            \"score\": 0.58\n        },\n        {\n            \"id\": 4413842,\n            \"name\": \"Webb City, MO, US\",\n            \"latitude\": 37.14645,\n            \"longitude\": -94.463,\n            \"score\": 0.57\n        },\n        {\n            \"id\": 4465088,\n            \"name\": \"Elizabeth City, NC, US\",\n            \"latitude\": 36.2946,\n            \"longitude\": -76.25105,\n            \"score\": 0.57\n        },\n        {\n            \"id\": 4500546,\n            \"name\": \"Atlantic City, NJ, US\",\n            \"latitude\": 39.36428,\n            \"longitude\": -74.42293,\n            \"score\": 0.57\n        },\n        {\n            \"id\": 5118228,\n            \"name\": \"Garden City Park, NY, US\",\n            \"latitude\": 40.74093,\n            \"longitude\": -73.66263,\n            \"score\": 0.57\n        },\n        {\n            \"id\": 5186924,\n            \"name\": \"Dickson City, PA, US\",\n            \"latitude\": 41.47147,\n            \"longitude\": -75.60769,\n            \"score\": 0.57\n        },\n        {\n            \"id\": 5445439,\n            \"name\": \"Garden City, KS, US\",\n            \"latitude\": 37.97169,\n            \"longitude\": -100.87266,\n            \"score\": 0.57\n        },\n        {\n            \"id\": 5666176,\n            \"name\": \"Miles City, MT, US\",\n            \"latitude\": 46.40834,\n            \"longitude\": -105.84056,\n            \"score\": 0.57\n        },\n        {\n            \"id\": 4273837,\n            \"name\": \"Kansas City, KS, US\",\n            \"latitude\": 39.11417,\n            \"longitude\": -94.62746,\n            \"score\": 0.56\n        },\n        {\n            \"id\": 4276974,\n            \"name\": \"Park City, KS, US\",\n            \"latitude\": 37.80001,\n            \"longitude\": -97.31838,\n            \"score\": 0.56\n        },\n        {\n            \"id\": 4392388,\n            \"name\": \"Jefferson City, MO, US\",\n            \"latitude\": 38.5767,\n            \"longitude\": -92.17352,\n            \"score\": 0.56\n        },\n        {\n            \"id\": 4393217,\n            \"name\": \"Kansas City, MO, US\",\n            \"latitude\": 39.09973,\n            \"longitude\": -94.57857,\n            \"score\": 0.56\n        },\n        {\n            \"id\": 4451810,\n            \"name\": \"Yazoo City, MS, US\",\n            \"latitude\": 32.85513,\n            \"longitude\": -90.40565,\n            \"score\": 0.56\n        },\n        {\n            \"id\": 4526365,\n            \"name\": \"Tipp City, OH, US\",\n            \"latitude\": 39.95839,\n            \"longitude\": -84.17216,\n            \"score\": 0.56\n        },\n        {\n            \"id\": 4534934,\n            \"name\": \"Del City, OK, US\",\n            \"latitude\": 35.44201,\n            \"longitude\": -97.44087,\n            \"score\": 0.56\n        },\n        {\n            \"id\": 4544349,\n            \"name\": \"Oklahoma City, OK, US\",\n            \"latitude\": 35.46756,\n            \"longitude\": -97.51643,\n            \"score\": 0.56\n        },\n        {\n            \"id\": 4705692,\n            \"name\": \"League City, TX, US\",\n            \"latitude\": 29.50745,\n            \"longitude\": -95.09493,\n            \"score\": 0.56\n        },\n        {\n            \"id\": 4923531,\n            \"name\": \"Michigan City, IN, US\",\n            \"latitude\": 41.70754,\n            \"longitude\": -86.89503,\n            \"score\": 0.56\n        },\n        {\n            \"id\": 7258741,\n            \"name\": \"Holiday City-Berkeley, NJ, US\",\n            \"latitude\": 39.9638,\n            \"longitude\": -74.27803,\n            \"score\": 0.56\n        },\n        {\n            \"id\": 5994839,\n            \"name\": \"Labrador City, 05, CA\",\n            \"latitude\": 52.94626,\n            \"longitude\": -66.91137,\n            \"score\": 0.55\n        },\n        {\n            \"id\": 4082866,\n            \"name\": \"Phenix City, AL, US\",\n            \"latitude\": 32.47098,\n            \"longitude\": -85.00077,\n            \"score\": 0.55\n        },\n        {\n            \"id\": 4155623,\n            \"name\": \"Floral City, FL, US\",\n            \"latitude\": 28.74999,\n            \"longitude\": -82.29676,\n            \"score\": 0.55\n        },\n        {\n            \"id\": 4287450,\n            \"name\": \"Central City, KY, US\",\n            \"latitude\": 37.29393,\n            \"longitude\": -87.12333,\n            \"score\": 0.55\n        },\n        {\n            \"id\": 4535823,\n            \"name\": \"Elk City, OK, US\",\n            \"latitude\": 35.41199,\n            \"longitude\": -99.40426,\n            \"score\": 0.55\n        },\n        {\n            \"id\": 5062292,\n            \"name\": \"Valley City, ND, US\",\n            \"latitude\": 46.92331,\n            \"longitude\": -98.00315,\n            \"score\": 0.55\n        },\n        {\n            \"id\": 5099836,\n            \"name\": \"Jersey City, NJ, US\",\n            \"latitude\": 40.72816,\n            \"longitude\": -74.07764,\n            \"score\": 0.55\n        },\n        {\n            \"id\": 5128581,\n            \"name\": \"New York City, NY, US\",\n            \"latitude\": 40.71427,\n            \"longitude\": -74.00597,\n            \"score\": 0.55\n        },\n        {\n            \"id\": 5401469,\n            \"name\": \"Temple City, CA, US\",\n            \"latitude\": 34.10723,\n            \"longitude\": -118.05785,\n            \"score\": 0.55\n        },\n        {\n            \"id\": 5712169,\n            \"name\": \"Baker City, OR, US\",\n            \"latitude\": 44.77487,\n            \"longitude\": -117.83438,\n            \"score\": 0.55\n        },\n        {\n            \"id\": 5780993,\n            \"name\": \"Salt Lake City, UT, US\",\n            \"latitude\": 40.76078,\n            \"longitude\": -111.89105,\n            \"score\": 0.55\n        },\n        {\n            \"id\": 4157827,\n            \"name\": \"Haines City, FL, US\",\n            \"latitude\": 28.11418,\n            \"longitude\": -81.61785,\n            \"score\": 0.54\n        },\n        {\n            \"id\": 4166723,\n            \"name\": \"Ocean City, FL, US\",\n            \"latitude\": 30.44103,\n            \"longitude\": -86.61356,\n            \"score\": 0.54\n        },\n        {\n            \"id\": 4267661,\n            \"name\": \"Arkansas City, KS, US\",\n            \"latitude\": 37.06197,\n            \"longitude\": -97.03837,\n            \"score\": 0.54\n        },\n        {\n            \"id\": 4333811,\n            \"name\": \"Morgan City, LA, US\",\n            \"latitude\": 29.69937,\n            \"longitude\": -91.20677,\n            \"score\": 0.54\n        },\n        {\n            \"id\": 4504598,\n            \"name\": \"Ventnor City, NJ, US\",\n            \"latitude\": 39.34039,\n            \"longitude\": -74.47737,\n            \"score\": 0.54\n        },\n        {\n            \"id\": 4695535,\n            \"name\": \"Gun Barrel City, TX, US\",\n            \"latitude\": 32.33459,\n            \"longitude\": -96.15136,\n            \"score\": 0.54\n        },\n        {\n            \"id\": 4829307,\n            \"name\": \"Bay City, TX, US\",\n            \"latitude\": 28.98276,\n            \"longitude\": -95.9694,\n            \"score\": 0.54\n        },\n        {\n            \"id\": 4921229,\n            \"name\": \"Hartford City, IN, US\",\n            \"latitude\": 40.45115,\n            \"longitude\": -85.36997,\n            \"score\": 0.54\n        },\n        {\n            \"id\": 5445298,\n            \"name\": \"Dodge City, KS, US\",\n            \"latitude\": 37.7528,\n            \"longitude\": -100.01708,\n            \"score\": 0.54\n        },\n        {\n            \"id\": 5500539,\n            \"name\": \"Boulder City, NV, US\",\n            \"latitude\": 35.97859,\n            \"longitude\": -114.83249,\n            \"score\": 0.54\n        },\n        {\n            \"id\": 5593814,\n            \"name\": \"Garden City, ID, US\",\n            \"latitude\": 43.62211,\n            \"longitude\": -116.23817,\n            \"score\": 0.54\n        },\n        {\n            \"id\": 4157467,\n            \"name\": \"Greenacres City, FL, US\",\n            \"latitude\": 26.62368,\n            \"longitude\": -80.12532,\n            \"score\": 0.53\n        },\n        {\n            \"id\": 4239714,\n            \"name\": \"Granite City, IL, US\",\n            \"latitude\": 38.70144,\n            \"longitude\": -90.14872,\n            \"score\": 0.53\n        },\n        {\n            \"id\": 4466720,\n            \"name\": \"Forest City, NC, US\",\n            \"latitude\": 35.33401,\n            \"longitude\": -81.8651,\n            \"score\": 0.53\n        },\n        {\n            \"id\": 5105634,\n            \"name\": \"Union City, NJ, US\",\n            \"latitude\": 40.77955,\n            \"longitude\": -74.02375,\n            \"score\": 0.53\n        },\n        {\n            \"id\": 5301388,\n            \"name\": \"Lake Havasu City, AZ, US\",\n            \"latitude\": 34.4839,\n            \"longitude\": -114.32245,\n            \"score\": 0.53\n        },\n        {\n            \"id\": 5768233,\n            \"name\": \"Rapid City, SD, US\",\n            \"latitude\": 44.08054,\n            \"longitude\": -103.23101,\n            \"score\": 0.53\n        },\n        {\n            \"id\": 5779451,\n            \"name\": \"Park City, UT, US\",\n            \"latitude\": 40.64606,\n            \"longitude\": -111.49797,\n            \"score\": 0.53\n        },\n        {\n            \"id\": 4168773,\n            \"name\": \"Plant City, FL, US\",\n            \"latitude\": 28.01863,\n            \"longitude\": -82.11286,\n            \"score\": 0.52\n        },\n        {\n            \"id\": 4215110,\n            \"name\": \"Peachtree City, GA, US\",\n            \"latitude\": 33.39678,\n            \"longitude\": -84.59576,\n            \"score\": 0.52\n        },\n        {\n            \"id\": 4542765,\n            \"name\": \"Midwest City, OK, US\",\n            \"latitude\": 35.44951,\n            \"longitude\": -97.3967,\n            \"score\": 0.52\n        },\n        {\n            \"id\": 4548267,\n            \"name\": \"Ponca City, OK, US\",\n            \"latitude\": 36.70698,\n            \"longitude\": -97.08559,\n            \"score\": 0.52\n        },\n        {\n            \"id\": 4695912,\n            \"name\": \"Haltom City, TX, US\",\n            \"latitude\": 32.79957,\n            \"longitude\": -97.26918,\n            \"score\": 0.52\n        },\n        {\n            \"id\": 4738574,\n            \"name\": \"Universal City, TX, US\",\n            \"latitude\": 29.54801,\n            \"longitude\": -98.29112,\n            \"score\": 0.52\n        },\n        {\n            \"id\": 5287565,\n            \"name\": \"Bullhead City, AZ, US\",\n            \"latitude\": 35.14778,\n            \"longitude\": -114.5683,\n            \"score\": 0.52\n        },\n        {\n            \"id\": 5316201,\n            \"name\": \"Sun City, AZ, US\",\n            \"latitude\": 33.59754,\n            \"longitude\": -112.27182,\n            \"score\": 0.52\n        },\n        {\n            \"id\": 5318279,\n            \"name\": \"Tuba City, AZ, US\",\n            \"latitude\": 36.13499,\n            \"longitude\": -111.23986,\n            \"score\": 0.52\n        },\n        {\n            \"id\": 5399901,\n            \"name\": \"Sun City, CA, US\",\n            \"latitude\": 33.70919,\n            \"longitude\": -117.19726,\n            \"score\": 0.52\n        },\n        {\n            \"id\": 5852275,\n            \"name\": \"Pearl City, HI, US\",\n            \"latitude\": 21.39722,\n            \"longitude\": -157.97333,\n            \"score\": 0.52\n        },\n        {\n            \"id\": 4085336,\n            \"name\": \"Rainbow City, AL, US\",\n            \"latitude\": 33.95482,\n            \"longitude\": -86.04192,\n            \"score\": 0.51\n        },\n        {\n            \"id\": 4150066,\n            \"name\": \"Carol City, FL, US\",\n            \"latitude\": 25.94065,\n            \"longitude\": -80.2456,\n            \"score\": 0.51\n        },\n        {\n            \"id\": 4151824,\n            \"name\": \"Cooper City, FL, US\",\n            \"latitude\": 26.05731,\n            \"longitude\": -80.27172,\n            \"score\": 0.51\n        },\n        {\n            \"id\": 4161797,\n            \"name\": \"Leisure City, FL, US\",\n            \"latitude\": 25.49539,\n            \"longitude\": -80.42922,\n            \"score\": 0.51\n        },\n        {\n            \"id\": 4167695,\n            \"name\": \"Panama City Beach, FL, US\",\n            \"latitude\": 30.17659,\n            \"longitude\": -85.80549,\n            \"score\": 0.51\n        },\n        {\n            \"id\": 4317639,\n            \"name\": \"Bossier City, LA, US\",\n            \"latitude\": 32.51599,\n            \"longitude\": -93.73212,\n            \"score\": 0.51\n        },\n        {\n            \"id\": 4876523,\n            \"name\": \"Sioux City, IA, US\",\n            \"latitude\": 42.49999,\n            \"longitude\": -96.40031,\n            \"score\": 0.51\n        },\n        {\n            \"id\": 5411015,\n            \"name\": \"Yuba City, CA, US\",\n            \"latitude\": 39.14045,\n            \"longitude\": -121.61691,\n            \"score\": 0.51\n        },\n        {\n            \"id\": 5491487,\n            \"name\": \"Silver City, NM, US\",\n            \"latitude\": 32.77008,\n            \"longitude\": -108.28033,\n            \"score\": 0.51\n        },\n        {\n            \"id\": 7160204,\n            \"name\": \"City of Milford (balance), CT, US\",\n            \"latitude\": 41.22374,\n            \"longitude\": -73.06164,\n            \"score\": 0.51\n        },\n        {\n            \"id\": 4158604,\n            \"name\": \"Highland City, FL, US\",\n            \"latitude\": 27.9653,\n            \"longitude\": -81.87786,\n            \"score\": 0.5\n        },\n        {\n            \"id\": 4412697,\n            \"name\": \"University City, MO, US\",\n            \"latitude\": 38.65588,\n            \"longitude\": -90.30928,\n            \"score\": 0.5\n        },\n        {\n            \"id\": 4881096,\n            \"name\": \"Webster City, IA, US\",\n            \"latitude\": 42.46942,\n            \"longitude\": -93.81605,\n            \"score\": 0.5\n        },\n        {\n            \"id\": 5386834,\n            \"name\": \"Redwood City, CA, US\",\n            \"latitude\": 37.48522,\n            \"longitude\": -122.23635,\n            \"score\": 0.5\n        },\n        {\n            \"id\": 5404794,\n            \"name\": \"Universal City, CA, US\",\n            \"latitude\": 34.1389,\n            \"longitude\": -118.35341,\n            \"score\": 0.5\n        },\n        {\n            \"id\": 5536630,\n            \"name\": \"Cedar City, UT, US\",\n            \"latitude\": 37.67748,\n            \"longitude\": -113.06189,\n            \"score\": 0.5\n        },\n        {\n            \"id\": 5744253,\n            \"name\": \"Oregon City, OR, US\",\n            \"latitude\": 45.35734,\n            \"longitude\": -122.60676,\n            \"score\": 0.5\n        },\n        {\n            \"id\": 5779798,\n            \"name\": \"Plain City, UT, US\",\n            \"latitude\": 41.298,\n            \"longitude\": -112.08605,\n            \"score\": 0.5\n        },\n        {\n            \"id\": 4111382,\n            \"name\": \"Forrest City, AR, US\",\n            \"latitude\": 35.00815,\n            \"longitude\": -90.78983,\n            \"score\": 0.49\n        },\n        {\n            \"id\": 5079250,\n            \"name\": \"South Sioux City, NE, US\",\n            \"latitude\": 42.47388,\n            \"longitude\": -96.41364,\n            \"score\": 0.49\n        },\n        {\n            \"id\": 5417737,\n            \"name\": \"Commerce City, CO, US\",\n            \"latitude\": 39.80832,\n            \"longitude\": -104.93387,\n            \"score\": 0.49\n        },\n        {\n            \"id\": 5501344,\n            \"name\": \"Carson City, NV, US\",\n            \"latitude\": 39.1638,\n            \"longitude\": -119.7674,\n            \"score\": 0.49\n        },\n        {\n            \"id\": 4155669,\n            \"name\": \"Florida City, FL, US\",\n            \"latitude\": 25.44789,\n            \"longitude\": -80.47922,\n            \"score\": 0.48\n        },\n        {\n            \"id\": 4155824,\n            \"name\": \"Forest City, FL, US\",\n            \"latitude\": 28.66678,\n            \"longitude\": -81.44334,\n            \"score\": 0.48\n        },\n        {\n            \"id\": 4664170,\n            \"name\": \"Union City, TN, US\",\n            \"latitude\": 36.42423,\n            \"longitude\": -89.05701,\n            \"score\": 0.48\n        },\n        {\n            \"id\": 5784607,\n            \"name\": \"West Valley City, UT, US\",\n            \"latitude\": 40.69161,\n            \"longitude\": -112.00105,\n            \"score\": 0.48\n        },\n        {\n            \"id\": 4227777,\n            \"name\": \"Union City, GA, US\",\n            \"latitude\": 33.58706,\n            \"longitude\": -84.54243,\n            \"score\": 0.47\n        },\n        {\n            \"id\": 4317864,\n            \"name\": \"Bridge City, LA, US\",\n            \"latitude\": 29.93326,\n            \"longitude\": -90.17007,\n            \"score\": 0.47\n        },\n        {\n            \"id\": 4684480,\n            \"name\": \"Crystal City, TX, US\",\n            \"latitude\": 28.67748,\n            \"longitude\": -99.82811,\n            \"score\": 0.47\n        },\n        {\n            \"id\": 4711801,\n            \"name\": \"Missouri City, TX, US\",\n            \"latitude\": 29.61857,\n            \"longitude\": -95.53772,\n            \"score\": 0.47\n        },\n        {\n            \"id\": 5341114,\n            \"name\": \"Culver City, CA, US\",\n            \"latitude\": 34.02112,\n            \"longitude\": -118.39647,\n            \"score\": 0.47\n        },\n        {\n            \"id\": 5416005,\n            \"name\": \"Cañon City, CO, US\",\n            \"latitude\": 38.44098,\n            \"longitude\": -105.24245,\n            \"score\": 0.47\n        },\n        {\n            \"id\": 5781061,\n            \"name\": \"Sandy City, UT, US\",\n            \"latitude\": 40.57204,\n            \"longitude\": -111.86056,\n            \"score\": 0.47\n        },\n        {\n            \"id\": 4174317,\n            \"name\": \"Sun City Center, FL, US\",\n            \"latitude\": 27.71809,\n            \"longitude\": -82.35176,\n            \"score\": 0.46\n        },\n        {\n            \"id\": 4676316,\n            \"name\": \"Bridge City, TX, US\",\n            \"latitude\": 30.02077,\n            \"longitude\": -93.84573,\n            \"score\": 0.46\n        },\n        {\n            \"id\": 4724241,\n            \"name\": \"Royse City, TX, US\",\n            \"latitude\": 32.97512,\n            \"longitude\": -96.33248,\n            \"score\": 0.46\n        },\n        {\n            \"id\": 5341430,\n            \"name\": \"Daly City, CA, US\",\n            \"latitude\": 37.70577,\n            \"longitude\": -122.46192,\n            \"score\": 0.46\n        },\n        {\n            \"id\": 5736645,\n            \"name\": \"Lincoln City, OR, US\",\n            \"latitude\": 44.95816,\n            \"longitude\": -124.01789,\n            \"score\": 0.46\n        },\n        {\n            \"id\": 5771960,\n            \"name\": \"Brigham City, UT, US\",\n            \"latitude\": 41.51021,\n            \"longitude\": -112.0155,\n            \"score\": 0.46\n        },\n        {\n            \"id\": 4700401,\n            \"name\": \"Jacinto City, TX, US\",\n            \"latitude\": 29.76745,\n            \"longitude\": -95.23382,\n            \"score\": 0.45\n        },\n        {\n            \"id\": 4722837,\n            \"name\": \"Rio Grande City, TX, US\",\n            \"latitude\": 26.37979,\n            \"longitude\": -98.8203,\n            \"score\": 0.45\n        },\n        {\n            \"id\": 5328152,\n            \"name\": \"Big Bear City, CA, US\",\n            \"latitude\": 34.26112,\n            \"longitude\": -116.84503,\n            \"score\": 0.45\n        },\n        {\n            \"id\": 5335006,\n            \"name\": \"Cathedral City, CA, US\",\n            \"latitude\": 33.77974,\n            \"longitude\": -116.46529,\n            \"score\": 0.45\n        },\n        {\n            \"id\": 5350159,\n            \"name\": \"Foster City, CA, US\",\n            \"latitude\": 37.55855,\n            \"longitude\": -122.27108,\n            \"score\": 0.45\n        },\n        {\n            \"id\": 5551665,\n            \"name\": \"Arizona City, AZ, US\",\n            \"latitude\": 32.75589,\n            \"longitude\": -111.67096,\n            \"score\": 0.45\n        },\n        {\n            \"id\": 4273680,\n            \"name\": \"Junction City, KS, US\",\n            \"latitude\": 39.02861,\n            \"longitude\": -96.8314,\n            \"score\": 0.44\n        },\n        {\n            \"id\": 5332748,\n            \"name\": \"California City, CA, US\",\n            \"latitude\": 35.1258,\n            \"longitude\": -117.9859,\n            \"score\": 0.44\n        },\n        {\n            \"id\": 5376200,\n            \"name\": \"National City, CA, US\",\n            \"latitude\": 32.67811,\n            \"longitude\": -117.0992,\n            \"score\": 0.44\n        },\n        {\n            \"id\": 5397851,\n            \"name\": \"South Yuba City, CA, US\",\n            \"latitude\": 39.11656,\n            \"longitude\": -121.63913,\n            \"score\": 0.44\n        },\n        {\n            \"id\": 5562087,\n            \"name\": \"Crescent City, CA, US\",\n            \"latitude\": 41.75595,\n            \"longitude\": -124.20175,\n            \"score\": 0.44\n        },\n        {\n            \"id\": 5850554,\n            \"name\": \"Makakilo City, HI, US\",\n            \"latitude\": 21.34694,\n            \"longitude\": -158.08583,\n            \"score\": 0.44\n        },\n        {\n            \"id\": 5316205,\n            \"name\": \"Sun City West, AZ, US\",\n            \"latitude\": 33.66198,\n            \"longitude\": -112.34127,\n            \"score\": 0.43\n        },\n        {\n            \"id\": 5372902,\n            \"name\": \"Midway City, CA, US\",\n            \"latitude\": 33.74474,\n            \"longitude\": -117.98923,\n            \"score\": 0.42\n        },\n        {\n            \"id\": 5784731,\n            \"name\": \"White City, UT, US\",\n            \"latitude\": 40.56578,\n            \"longitude\": -111.86438,\n            \"score\": 0.42\n        },\n        {\n            \"id\": 5523369,\n            \"name\": \"Horizon City, TX, US\",\n            \"latitude\": 31.69261,\n            \"longitude\": -106.20748,\n            \"score\": 0.41\n        },\n        {\n            \"id\": 5760396,\n            \"name\": \"White City, OR, US\",\n            \"latitude\": 42.43735,\n            \"longitude\": -122.85893,\n            \"score\": 0.41\n        },\n        {\n            \"id\": 5363208,\n            \"name\": \"King City, CA, US\",\n            \"latitude\": 36.21274,\n            \"longitude\": -121.12603,\n            \"score\": 0.4\n        },\n        {\n            \"id\": 5404555,\n            \"name\": \"Union City, CA, US\",\n            \"latitude\": 37.59577,\n            \"longitude\": -122.01913,\n            \"score\": 0.4\n        },\n        {\n            \"id\": 5734198,\n            \"name\": \"Junction City, OR, US\",\n            \"latitude\": 44.21929,\n            \"longitude\": -123.20565,\n            \"score\": 0.39\n        },\n        {\n            \"id\": 5335662,\n            \"name\": \"Century City, CA, US\",\n            \"latitude\": 34.05557,\n            \"longitude\": -118.41786,\n            \"score\": 0.38\n        }\n    ],\n    \"errors\": null\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
