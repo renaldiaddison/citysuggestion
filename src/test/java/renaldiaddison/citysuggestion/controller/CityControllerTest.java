@@ -430,6 +430,7 @@ public class CityControllerTest {
             WebResponse<List<SuggestionCityResponse>> response = objectMapper.readValue(result.getResponse().getContentAsString(), new TypeReference<>() {
             });
             assertNull(response.getErrors());
+            assertEquals(1, response.getData().size());
             assertEquals(String.format("%s, %s, %s", request1.getName(), request1.getAdmin1(), request1.getCountry()), response.getData().get(0).getName());
         });
 
